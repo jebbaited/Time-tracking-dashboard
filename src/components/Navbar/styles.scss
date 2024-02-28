@@ -1,0 +1,26 @@
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+
+  > button {
+    background: transparent;
+    border: none;
+    color: #bfbfc6;
+    cursor: pointer;
+
+    &.active {
+      color: white;
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
